@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "efe5289b-166a-4d7a-a4ce-c2383a3ea11b",
+		"name": "BASIC CRUD DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3166724"
+	},
+	"item": [
+		{
+			"name": "GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "full_name",
+							"value": "Israel Flores",
+							"type": "text"
+						},
+						{
+							"key": "dni",
+							"value": "73473897",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "isflogar0103@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "full_name",
+							"value": "Israel Flores García",
+							"type": "text"
+						},
+						{
+							"key": "dni",
+							"value": "73473897",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "iflores@dev.net",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/users/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
